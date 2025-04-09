@@ -168,3 +168,56 @@ body {
  .valentines-day:hover .text {
    transform: translateY(-50px);
  }
+
+ /* --- Responsive para pantallas pequeñas --- */
+@media (max-width: 768px) {
+  #card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    position: static;
+    margin: 2em auto;
+    visibility: visible; /* Opcional, por si quieres que ya se vea en móvil */
+  }
+
+  .side {
+    width: 100%;
+    height: auto;
+    transform: none;
+    padding: 20px;
+  }
+
+  #card h2 {
+    font-size: 2em;
+  }
+
+  #card p {
+    font-size: 1.2em;
+    padding: 0 15px;
+    text-align: justify;
+  }
+
+  .valentines-day {
+    transform: scale(0.8);
+  }
+
+  body {
+    overflow: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  #card h2 {
+    font-size: 1.5em;
+  }
+
+  #card p {
+    font-size: 1em;
+  }
+
+  .valentines-day {
+    transform: scale(0.6);
+  }
+}
